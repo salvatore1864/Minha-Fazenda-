@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Pedido</title>
+
+</head>
+<body>
+
+<h1>Fazenda vale das águas </h1> 
+<img src="img\logojpg.jpg"width="150"> 
+
+<li><a href="index.html"> Página inicial</a></li>
+<li><a href="contato.html"> Contato</a></li>
+
+
+       <h3>Faça seu pedido</h3>
+       <form action="validar.html" method="get">
+        Email: <input type="email" name="email" placeholder="seu email" /> <br>
+        Nome: <input type="nome" name="nome" placeholder="seu nome" /> <br> 
+        Telefone: <input type="telefone" name="telefone" placeholder="seu telefone" /> <br>
+        Quantidade: <input type="number" name="num" max="10" min="0" step="1" /> <br>
+        Data: <input type="date" name="data" /> <br>
+        URL: <input type="url" name="site" placeholder="seu site" /> <br> 
+        Numero: <input type="number" name="num" max="10" min="0" step="3" /> <br>
+        Busca: <input type="search" name="search" placeholder="sua duvida" /> <br>
+        <label for="s-escola" > Escolha o tipo de cafe : </label>
+        <select name="escola" id="s-escola" >
+        <opition value="0" > Escolha...</opition>
+        <opition value="pub" sselected > Cafe Arabica </opition>
+        <opition value="part" > Cafe colombiano </opition>
+        <opition value="part" > Cafe comum </opition>
+        <opition value="part" > Cafe robusta </opition>
+        </select><hr> 
+
+        <legend> Cafe moido : </legend>
+        <label for="i-m" > Sim </label>
+        <input type="radio" name="sex" checked="checked" id="i-m" value="s" />
+        <label for="i-f"> Não </label>
+        <input type="radio" name="sex" id="i-f" value="n" /> <hr>
+
+        <legend> Tipo de torra do cafe </legend>
+        <label for="i-m" > Clara </label>
+        <input type="radio" name="sex" checked="checked" id="i-m" value="m" />
+        <label for="i-f" > Media </label>
+        <input type="radio" name="sex" id="i-f" value="f" />
+        <label for="i-f"> Escura </label>
+        <input type="radio" name="sex" id="i-f" value="f" /> <hr> 
+
+        <legend> Opções extras: </legend>
+        <label for="i-f"> Embalagem para presente </label>
+        <input type="checkbox" name="sports" id="i-f" value="f" />
+        <label for="i-b" > Catálogo de produtos </label>
+        <input type="checkbox" checked="checked" name="sports" id="i-b" value="B" /> 
+
+        <legend> Formas de pagamento </legend>
+        <label for="i-m" > Boleto </label>
+        <input type="radio" name="cafe" checked="checked" id="i-m" value="M" />
+        <label for="i-f"> Pix</label>
+        <input type="radio" name="cafe" id="i-f" value="f" />
+        <label for="i-f" > Crédito </label>
+        <input type="radio" name="cafe" id="i-f" value="f" /> <hr> 
+
+        <label for="t-desc" > Comentários</label> <br />
+        <textarea name="desc" id="t-desc" cols="15" rows="4" > </textarea> <hr>
+
+        <input type="reset" value="resetar" />
+        <input type="reset" value="enviar" />
+    
+    </form>
+
+</body>
+
+</html>
